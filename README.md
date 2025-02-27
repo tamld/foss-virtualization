@@ -12,6 +12,7 @@
 - [📜 Infrastructure as Code (IaC)](#-infrastructure-as-code-iac)
 - [🔄 Configuration Management](#-configuration-management)
 - [📚 **Learning Resources \& Useful Repositories**](#-learning-resources--useful-repositories)
+- [� License](#-license)
 - [💡 **Final Thoughts**](#-final-thoughts)
 
 ---
@@ -118,6 +119,9 @@ A **hypervisor** is software that enables the creation and management of **virtu
 - [Awesome Ansible](https://github.com/ansible-community/awesome-ansible)  
 
 ---
+
+## 📝 License
+This project is licensed under the **MIT License** – see the [LICENSE](./LICENSE) file for details.
 
 ## 💡 **Final Thoughts**  
 Open-source virtualization and containerization tools **enable cost-effective, scalable, and automated infrastructures**.  
