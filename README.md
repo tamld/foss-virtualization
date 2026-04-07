@@ -1,5 +1,15 @@
 <h1 align="center">An Open-Source Guide to Virtualization & Containerization</h1>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/status-active-brightgreen" alt="Status">
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
+  <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white" alt="Kubernetes">
+  <img src="https://img.shields.io/badge/Proxmox-E57000?logo=proxmox&logoColor=white" alt="Proxmox">
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen" alt="PRs Welcome">
+</p>
+
+
 ## 📌 Table of Contents  
 
 - [📌 Table of Contents](#-table-of-contents)
