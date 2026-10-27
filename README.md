@@ -66,7 +66,10 @@ A **hypervisor** is software that enables the creation and management of **virtu
 |---------------|---------|---------------|---------------|-------------|
 | [**KVM**](https://www.linux-kvm.org/) | Bare-Metal | High | Moderate | Best for Linux-based servers |
 | [**Xen**](https://xenproject.org/) | Bare-Metal | High | Complex | Used in AWS and large-scale clouds |
-| [**Proxmox VE**](https://www.proxmox.com/) | Bare-Metal | High | Easy | All-in-one virtualization platform |
+| [**Proxmox VE**](https://www.proxmox.com/) | Bare-Metal | High | Easy | All-in-one virtualization platform (KVM + LXC + ZFS + Ceph) |
+| [**XCP-ng**](https://xcp-ng.org/) | Bare-Metal | High | Moderate | Turnkey open-source Xen hypervisor with Xen Orchestra |
+| [**Cloud Hypervisor**](https://www.cloudhypervisor.org/) | Bare-Metal / VMM | Ultra-High | Moderate | Rust-based VMM for modern cloud workloads and confidential compute |
+| [**Firecracker**](https://firecracker-microvm.github.io/) | MicroVM | Ultra-High | Moderate | Lightweight microVMs for serverless and AI agent sandboxing |
 | [**oVirt**](https://www.ovirt.org/) | Bare-Metal | High | Moderate | Alternative to VMware vSphere |
 | [**VirtualBox**](https://www.virtualbox.org/) | Hosted | Lower | Very Easy | Best for personal use and testing |
 | [**QEMU**](https://www.qemu.org/) | Hosted | High | Moderate | Works with KVM for hardware emulation |
@@ -82,9 +85,10 @@ A **hypervisor** is software that enables the creation and management of **virtu
 | **Tool** | **Type** | **Main Features** | **Use Case** |
 |---------|---------|----------------|------------|
 | [**Docker**](https://www.docker.com/) | Container Runtime | Industry standard, easy-to-use | Application deployment |
-| [**Podman**](https://podman.io/) | Container Runtime | Daemonless, rootless security | Secure container management |
+| [**Podman**](https://podman.io/) | Container Runtime | Daemonless, rootless security, Quadlet systemd | Secure rootless container management |
+| [**Incus**](https://linuxcontainers.org/incus/) | System Container & VM | Community-driven LXD successor for system containers & KVM | Unified system containers and VMs |
 | [**LXC**](https://linuxcontainers.org/) | OS-Level Virtualization | Closer to VMs, lightweight | Running system containers |
-| [**Kubernetes**](https://kubernetes.io/) | Orchestration | Manages multi-container deployments | Scaling applications |
+| [**Kubernetes**](https://kubernetes.io/) | Orchestration | Manages multi-container deployments (K3s / Talos / RKE2) | Scaling applications |
 | [**Nomad**](https://www.nomadproject.io/) | Orchestration | Lightweight, simpler than Kubernetes | Small-scale deployments |
 
 ---

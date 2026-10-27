@@ -1,0 +1,33 @@
+name: CI & Quality Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Markdown & Curator Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate Curator Script & README Tables
+        run: |
+          python -m py_compile .github/scripts/curator.py
+          python -c "
+          text = open('README.md', encoding='utf-8').read()
+          assert 'Proxmox VE' in text and 'Incus' in text and 'Firecracker' in text
+          print('README virtualization & container tables verified.')
+          "
